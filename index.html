@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <style>
+  .canvas {
+  padding: 0;
+  margin: 0;
+  display: block;
+  border: none; 
+  width: 61.8vw; 
+  height: 61.8vw; 
+  overflow-x: hidden;
+  overflow-y: auto;  
+}
+#wrapper {
+  display: flex;      
+  width: 100%;            
+  height: 100vh;             
+}
+#canvas {
+  flex: 1;
+  margin-right: 0px; /* Adjust spacing as needed */
+}
+#canvasContainer {
+  width: 39.2vw;
+  height: 61.8vh;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border: 1px solid #ccc;
+}
+#graphContainer {
+  width: 39.2vw;
+  height: 38.2vh;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border: 1px solid #ccc;
+}
+</style></head>
+<div id="wrapper">
+<body style="background-color:black;"><canvas id="canvas" width="1280" height="1280" class="canvas"></canvas>
+ <div> <div id="canvasContainer"></div> <div id="graphContainer"></div></div>
+ <script src="engine.js"></script>
+  
+</div>
+  </html>
